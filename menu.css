@@ -1,0 +1,95 @@
+h1{
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    background-color: #f4f4f4;
+
+    background-size: cover;
+    background-position: center;
+}
+.imagen:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(51, 51, 51, 0.8); 
+    text-align: center; 
+    position: relative; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.menu li {
+    display: inline-block; 
+    position: relative;
+    animation: fadeIn 0.5s; 
+}
+
+.menu li a {
+    display: block;
+    color: #ffcc00; 
+    text-align: center;
+    padding: 20px 24px; 
+    font-size: 19px; 
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.menu li a:hover {
+    background-color: #ff6600; 
+    transform: scale(1.1) translateY(-3px); 
+}
+
+
+
+
+.menu li:hover .submenu {
+    display: block;
+    opacity: 1; 
+    transform: translateY(0); 
+}
+.submenu{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+
+}
+
+.submenu li {
+    float: none; 
+}
+
+.submenu li a {
+    padding: 10px; 
+    color: #ffcc00; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.submenu li a:hover {
+    color: #ffffff; 
+    background-color: #050200; 
+    
+}
+h2{
+    color: #ff6600;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
